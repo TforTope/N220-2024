@@ -80,4 +80,13 @@ function addItem() {
   console.log(newItem);
 }
 
-function 
+function returnValue(color) {
+  return color;
+}
+alert(returnValue("purple"));
+
+function calcCircleArea(radius) {
+  return 2 * Math.PI * radius;
+}
+document.getElementById("useOne").innerHTML += calcCircleArea(2);
+document.getElementById("useTwo").innerHTML += calcCircleArea(4);

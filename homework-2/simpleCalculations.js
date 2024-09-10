@@ -18,14 +18,17 @@ document.getElementById("addJacket").innerHTML +=
   bankAccount - shirt - pants - shoes > jacket;
 
 //Pizza//
-let pizza = 4;
-let slices = 8;
-let piecesOfPizza = 2.5;
+let totalPizzas = 4;
+let SlicesPerPizza = 8;
+let slicesThatStudentCanEat = 2.5;
 
+const totalSlices = totalPizzas * SlicesPerPizza;
+const pizzaLeftover = totalSlices % slicesThatStudentCanEat;
+const studentsFedWithPizza =
+  (totalSlices - pizzaLeftover) / slicesThatStudentCanEat;
 
-document.getElementById("profPizza") += 
-document.getElementById("profPizza2")
-
+document.getElementById("profPizza").innerHTML += studentsFedWithPizza;
+document.getElementById("profPizza2").innerHTML += pizzaLeftover;
 //Monty's Mega Bar//
 let adult = 12;
 let child = 6;
