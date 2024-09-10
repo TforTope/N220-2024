@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <h1>Arithmetic</h1>
+    <ul>
+      <li id="multi">Multiplication:</li>
+      <li id="division">Division:</li>
+      <li id="remainder">Remainder/Modulus:</li>
+      <li id="exponents">Exponents:</li>
+      <li id="increment">Increment:</li>
+      <li id="decrement">Decrement:</li>
+    </ul>
+    <h2>Increment/Decrement Issue</h2>
+    <p id="before">Before:</p>
+    <p id="after">After:</p>
+    <h1>Assignment</h1>
+    <ul>
+      <li id="notSign">Not:</li>
+      <li id="addTo">Add to Value:</li>
+      <li id="subTo">Subtract from Value:</li>
+      <li id="otherT">Other from Value:</li>
+    </ul>
+    <h1>Comparison</h1>
+    <ul>
+      <li id="equal">Equal Value:</li>
+      <li id="equalVT">Equal Value and Type:</li>
+      <li id="nEqual">Not Equal Value:</li>
+      <li id="nEqualVT">Not Equal Value and Type:</li>
+      <li id="gThan">Greater Than:</li>
+      <li id="LThanOrEqual">Less Than or Equal To:</li>
+    </ul>
+
+    <script>
+      //base for elements: document.getElementById('').innerHTML +=
+
+      //const myName = "Ty";
+      //myName = "Ty";
+      //let myName = "the lecturer Guy";
+      //console.log(myName);
+
+      //Arithmetic
+      document.getElementById("multi").innerHTML += "3 x 2 = " + 3 * 2;
+      document.getElementById("division").innerHTML += "6 / 2 = " + 6 / 2;
+      document.getElementById("remainder").innerHTML += "4 % 3 = " + (4 % 3);
+      document.getElementById("exponents").innerHTML += "2 ** 3 = " + 2 ** 3;
+      let incrementNumber = 2;
+      document.getElementById("increment").innerHTML +=
+        " 2 ++ = " + incrementNumber++;
+      document.getElementById("increment").innerHTML +=
+        "<br /> ++3 = " + ++incrementNumber;
+
+      document.getElementById("decrement").innerHTML +=
+        "4-- = " + incrementNumber--;
+      document.getElementById("decrement").innerHTML +=
+        "<br /> --3 = " + --incrementNumber;
+      //Assignment
+      document.getElementById("notSign").innerHTML += "!5 = " + !5;
+      document.getElementById("notSign").innerHTML += "<br /> ! = " + !5;
+
+      let addToNUm = 5;
+      addToNUm += 2;
+      document.getElementById("addTo").innerHTML += "5 += 2" + addToNUm;
+
+      let addToString = "Ty";
+      addToString += " the potato guy ";
+      document.getElementById("addTo").innerHTML +=
+        "<br /> 'Ty'  += the potato guy '=" + addToString;
+
+      //Comparison
+      document.getElementById("equal").innerHTML += "3 == '3' = " + (3 == "3");
+      document.getElementById("equalVT").innerHTML +=
+        "3 === '3' = " + (3 === "3");
+
+      document.getElementById("nEqual").innerHTML += "3 != '3' = " + (3 != "3");
+    </script>
+  </body>
+</html>
+==
