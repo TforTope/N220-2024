@@ -6,7 +6,7 @@ function printAnswer(answers) {
   answersPTag.innerHTML += `<br /> ${answers}`;
 }
 
-//ARRAT BASICS
+//ARRAY BASICS
 
 //1. Arrats will print as a string separted string with commas by default
 answersPTag.innerHTML += studentGrades;
