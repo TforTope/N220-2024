@@ -29,7 +29,7 @@ function showUserColors() {
     const userColor = userColors[i];
     colorSquares.innerHTML += `<div style= "height:200px; width: 200px; background-color: ${userColor.currentColor}" onclick="openColorChanger(${i})">
     <input 
-    
+
     type="color" 
     id="user-color-${i}" 
     name="user-color-${i}" 
@@ -61,3 +61,14 @@ function openColorChanger(userColorIndex) {
   console.log(userColorIndex);
   document.getElementById(`user-color-${userColorIndex}`).click();
 }
+
+function revertColorChanger (userColorIndex) {
+  
+    const lastColor = userColors[userColorIndex].currentColor;
+    if(lastColor){
+    const newUserColor = {
+      currentColor: lastColor,
+      lastColor: "",
+    };
+    userColors.splice(userColorIndex, 1, newUserColor);
+    
