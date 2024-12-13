@@ -57,3 +57,12 @@ button.blue {
 .done h4 {
   text-decoration: line-through;
 }
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+#categoryDropdown {
+  margin-left: 8px;
+}
